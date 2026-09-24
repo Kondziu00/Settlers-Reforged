@@ -1,0 +1,5 @@
+.feature{background:var(--pine-900); padding:32px 28px;}
+section.alt .feature{background:var(--pine-800);}
+.feature svg{margin-bottom:16px;}
+.feature h3{font-size:1.1rem; color:var(--parchment); margin-bottom:10px;}
+.feature p{font-size:0.95rem; color:var(--parchment-dim); margin:0;}

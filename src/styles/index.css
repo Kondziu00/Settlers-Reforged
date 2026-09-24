@@ -1,0 +1,56 @@
+:root{
+  --pine-950:#0f1912;
+  --pine-900:#14201a;
+  --pine-800:#1c2c22;
+  --parchment:#ece2cd;
+  --parchment-dim:#ddcfae;
+  --wood:#7a4b2a;
+  --wood-dark:#5a3720;
+  --gold:#c89b3c;
+  --gold-bright:#e0b85c;
+  --ink:#241d12;
+  --stone:#a89f8d;
+  --max-w:1120px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
+}
+body{
+  margin:0;
+  background:var(--pine-900);
+  color:var(--parchment);
+  font-family:"Source Serif 4", serif;
+  line-height:1.6;
+}
+h1,h2,h3{
+  font-family:"Cinzel", serif;
+  font-weight:600;
+  letter-spacing:0.01em;
+  margin:0;
+}
+a{color:inherit;}
+.wrap{max-width:var(--max-w); margin:0 auto; padding:0 28px;}
+:focus-visible{outline:3px solid var(--gold-bright); outline-offset:3px;}
+
+/* section shells shared by every page */
+section{padding:88px 0;}
+section.alt{background:var(--pine-800);}
+.section-head{max-width:640px; margin-bottom:48px;}
+.section-head h2{font-size:clamp(1.7rem, 3vw, 2.2rem); color:var(--parchment);}
+.section-head p{margin-top:14px; color:var(--parchment-dim); font-size:1.05rem;}
+
+/* shared button, used by Hero and DownloadCard */
+.btn{
+  display:inline-flex; align-items:center; gap:10px;
+  font-family:"Cinzel", serif; font-size:0.95rem; letter-spacing:0.02em;
+  padding:14px 26px; border-radius:3px; text-decoration:none; cursor:pointer;
+  border:1px solid transparent; transition:transform .12s ease, background .15s ease, border-color .15s ease;
+}
+.btn:active{transform:translateY(1px);}
+.btn-primary{background:var(--gold); color:var(--ink); border-color:var(--gold);}
+.btn-primary:hover{background:var(--gold-bright);}
+.btn-ghost{background:transparent; color:var(--parchment); border-color:rgba(236,226,205,0.35);}
+.btn-ghost:hover{border-color:var(--gold-bright); color:var(--gold-bright);}

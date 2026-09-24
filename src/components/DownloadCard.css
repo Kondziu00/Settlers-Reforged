@@ -1,0 +1,22 @@
+.download-card{
+  background:var(--parchment); color:var(--ink);
+  border:1px solid var(--wood-dark);
+  border-radius:4px;
+  padding:40px;
+  display:grid; grid-template-columns: 1fr auto; gap:32px; align-items:center;
+}
+@media (max-width:700px){ .download-card{grid-template-columns:1fr;} }
+.download-card h3{font-size:1.5rem; color:var(--ink);}
+.dl-meta{
+  display:flex; gap:22px; flex-wrap:wrap; margin-top:16px;
+  font-family:"IBM Plex Mono", monospace; font-size:0.85rem; color:var(--wood-dark);
+}
+.dl-meta dt{display:inline; font-weight:500;}
+.dl-meta div{display:flex; gap:6px;}
+.download-card .btn-primary{color:var(--pine-950);}
+.dl-note{margin-top:18px; font-size:0.85rem; color:#5c5342;}
+.dl-status{font-family:"IBM Plex Mono", monospace; font-size:0.8rem; margin-top:10px; color:#5c5342;}
+.dl-actions{display:flex; flex-direction:column; gap:10px; align-items:flex-start;}
+.other-downloads{margin-top:20px; display:flex; gap:18px; flex-wrap:wrap; font-size:0.9rem;}
+.other-downloads a{color:var(--stone); text-decoration:underline; text-decoration-color:rgba(168,159,141,0.4);}
+.other-downloads a:hover{color:var(--gold-bright);}

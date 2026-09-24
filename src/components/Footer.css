@@ -1,0 +1,7 @@
+footer{padding:52px 0 40px; border-top:1px solid rgba(200,155,60,0.2); background:var(--pine-950);}
+.footer-grid{display:flex; justify-content:space-between; flex-wrap:wrap; gap:24px;}
+.footer-grid .brand{margin-bottom:10px;}
+.footer-links{display:flex; gap:24px; flex-wrap:wrap; font-size:0.9rem; color:var(--stone);}
+.footer-links a{text-decoration:none;}
+.footer-links a:hover{color:var(--gold-bright);}
+.footer-fine{margin-top:28px; font-size:0.8rem; color:var(--stone);}

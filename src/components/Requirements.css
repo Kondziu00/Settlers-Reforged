@@ -1,0 +1,7 @@
+table.req{width:100%; border-collapse:collapse; margin-top:8px;}
+table.req th, table.req td{
+  text-align:left; padding:14px 16px; border-bottom:1px solid rgba(200,155,60,0.2);
+  font-size:0.95rem;
+}
+table.req th{color:var(--gold-bright); font-family:"Cinzel",serif; font-weight:600; font-size:0.85rem; width:220px;}
+table.req td{color:var(--parchment-dim);}

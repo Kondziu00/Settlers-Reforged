@@ -1,0 +1,18 @@
+header.site{
+  position:sticky; top:0; z-index:50;
+  background:rgba(15,25,18,0.92);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid rgba(200,155,60,0.25);
+}
+.nav{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:16px 28px; max-width:var(--max-w); margin:0 auto;
+}
+.brand{display:flex; align-items:center; gap:10px; font-family:"Cinzel",serif; font-size:1.15rem; color:var(--parchment); text-decoration:none;}
+.navlinks{display:flex; gap:28px; font-size:0.95rem;}
+.navlinks a{text-decoration:none; color:var(--stone); border-bottom:1px solid transparent; padding-bottom:2px; transition:color .15s, border-color .15s;}
+.navlinks a:hover{color:var(--gold-bright); border-color:var(--gold-bright);}
+.navlinks a.active{color:var(--gold-bright); border-color:var(--gold-bright);}
+@media (max-width:720px){
+  .navlinks{display:none;}
+}
