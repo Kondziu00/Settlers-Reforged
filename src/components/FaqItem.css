@@ -1,9 +1,93 @@
-.faq-item{border-bottom:1px solid rgba(200,155,60,0.2); padding:20px 0;}
-.faq-item summary{
-  cursor:pointer; font-family:"Cinzel",serif; font-size:1.05rem; color:var(--parchment);
-  list-style:none; display:flex; justify-content:space-between; align-items:center; gap:16px;
+/* .faq-item {
+	border-bottom: 1px solid rgba(200, 155, 60, 0.2);
+	padding: 20px 0;
 }
-.faq-item summary::-webkit-details-marker{display:none;}
-.faq-item summary::after{content:"+"; font-family:"Source Serif 4", serif; font-size:1.4rem; color:var(--gold-bright); flex:none;}
-.faq-item[open] summary::after{content:"–";}
-.faq-item p{margin:14px 0 0; color:var(--parchment-dim); max-width:70ch;}
+.faq-item summary {
+	cursor: pointer;
+	font-family: 'Cinzel', serif;
+	font-size: 1.05rem;
+	color: var(--parchment);
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 16px;
+}
+
+.faq-item summary::-webkit-details-marker {
+	display: none;
+}
+.faq-item summary::after {
+	content: '+';
+	font-family: 'Source Serif 4', serif;
+	font-size: 1.4rem;
+	color: var(--gold-bright);
+	flex: none;
+}
+.faq-item[open] summary::after {
+	content: '–';
+}
+.faq-item p {
+	margin: 14px 0 0;
+	color: var(--parchment-dim);
+	max-width: 70ch;
+} */
+.faq-item {
+	border-bottom: 1px solid rgba(200, 155, 60, 0.2);
+	padding: 20px 0;
+}
+
+.faq-question {
+	width: 100%;
+	padding: 0;
+	border: none;
+	background: none;
+	cursor: pointer;
+
+	font-family: 'Cinzel', serif;
+	font-size: 1.05rem;
+	color: var(--parchment);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 16px;
+
+	text-align: left;
+}
+
+.faq-icon {
+	font-family: 'Source Serif 4', serif;
+	font-size: 1.4rem;
+	color: var(--gold-bright);
+	flex: none;
+}
+
+/* ZAMKNIĘTE */
+.faq-answer {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 0.35s ease;
+}
+
+.faq-answer p {
+	overflow: hidden;
+	margin: 0;
+	padding-top: 0;
+
+	color: var(--parchment-dim);
+	max-width: 70ch;
+
+	opacity: 0;
+	transition: opacity 0.25s ease, padding-top 0.35s ease;
+}
+
+/* OTWARTE */
+.faq-item.open .faq-answer {
+	grid-template-rows: 1fr;
+}
+
+.faq-item.open .faq-answer p {
+	padding-top: 14px;
+	opacity: 1;
+}
